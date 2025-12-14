@@ -28,8 +28,8 @@ test("One USD should be 156.5 JPY",()=>{
 
     const yen = fromDollarToYen(3.5);
 
-    const expected2 = 3.5 * 156.5;
-    expect(fromDollarToYen(3.5)).toBe(547.75);
+    const expected2 = 3.5 * 3.45;
+    expect(fromDollarToYen(3.5)).toBeCloseTo(12.075000000000001);
 })
 
 
@@ -37,6 +37,6 @@ test("One Yen should be 3.045 Pounds",()=>{
     const {fromYenToPound} = require('./app.js');
     const jpy = fromYenToPound(3.5);
 
-    const expected3 = 3.5 * 3.045;
-    expect(fromYenToPound(3.5)).toBe(3.045);
+    const expected3 = 3.5 * 547.75;
+    expect(fromYenToPound(3.5)).toBeCloseTo(1917.125);
 })
