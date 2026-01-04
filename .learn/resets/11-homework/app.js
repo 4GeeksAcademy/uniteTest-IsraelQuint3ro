@@ -9,22 +9,21 @@ console.log(fromEuroToDollar(3.5))
 
 
 
-// function that converts 1  Dollar value to Yen
+// function that converts a Dollar valkue to Yen
 const fromDollarToYen = function(valueInDollar){
-let valueInYen = valueInDollar * 156.80;
+let valueInYen = valueInDollar * 156.5;
 
 return valueInYen;
 }
+
 console.log(fromDollarToYen(3.5))
 
 
-
-// function that converts 150 Yen value to GBP
 const fromYenToPound = function(valueInYen){
     let valueInPounds = valueInYen * 0.87;
     return valueInPounds;
 }
-console.log(fromYenToPound(150))
+
  
 
 
@@ -39,4 +38,4 @@ const sum = (a, b) => {
 
 console.log(sum(7, 3));
 
-module.exports = { sum, fromEuroToDollar,fromDollarToYen, fromYenToPound };
+module.exports = { sum, fromEuroToDollar,fromDollarToYen };
